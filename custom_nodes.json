@@ -246,5 +246,25 @@
   {
     "repo": "https://github.com/TTPlanetPig/Comfyui_TTP_Toolset",
     "commit": "13bd85f"
+  },
+  {
+    "repo": "https://github.com/spinagon/ComfyUI-seamless-tiling",
+    "commit": "c06e4e7"
+  },
+  {
+    "repo": "https://github.com/yolain/ComfyUI-Easy-Use",
+    "commit": "0daf114"
+  },
+  {
+    "repo": "https://github.com/Amorano/Jovimetrix",
+    "commit": "4900212"
+  },
+  {
+    "repo": "https://github.com/jags111/ComfyUI_Jags_VectorMagic",
+    "commit": "23d6aa6"
+  },
+  {
+    "repo": "https://github.com/aidenli/ComfyUI_NYJY",
+    "commit": "ded41db"
   }
 ]

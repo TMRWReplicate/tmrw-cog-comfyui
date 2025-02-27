@@ -3,6 +3,10 @@ build:
   cuda: "12.1"
   system_packages:
     - ffmpeg
+    - libgl1-mesa-glx
+    - libglx-mesa0
+    - libopengl0
+    - libglvnd0
   python_version: "3.12"
   python_packages:
     - torch
@@ -103,8 +107,76 @@ build:
 
     # ComfyUI-segment-anything-2
     - iopath
+
+    # ComfyUI-Easy-Use 
+    - diffusers
+    - accelerate
+    - clip_interrogator>=0.6.0
+    - lark
+    - onnxruntime
+    - opencv-python
+    - sentencepiece
+    - spandrel
+    - matplotlib
+    - peft
+
+    # Jovimetrix
+    - aenum
+    - aiohttp
+    - blendmodes
+    - daltonlens
+    - glfw
+    - loguru
+    - markdownify
+    - matplotlib
+    - mido[ports-rtmidi]
+    - mss
+    - numba
+    - numpy>=1.26.4,<2.0.0; python_version <= '3.11'
+    - numpy>=2.0.0; python_version >= '3.12'
+    - opencv-contrib-python
+    - Pillow
+    - PyOpenGL
+    - PyOpenGL_accelerate
+    - pywin32; platform_system=="Windows"
+    - requests
+    - scikit-image
+    - scikit-learn
+    - SpoutGL; platform_system=="Windows"
+    - stereoscopy[auto_align]
+    - vnoise
+    - pyobjc-framework-Quartz; platform_system=='Darwin'
+
+    # ComfyUI_Jags_VectorMagic
+    - librosa
+    - numpy
+    - Pillow
+    - scipy
+    - color-matcher
+    - matplotlib
+    - clip-interrogator
+    - simpleeval
+    - ultralytics
+    - ultralyticsplus
+    - opencv-python
+
+    # ComfyUI_NYJY
+    - torch
+    - torchvision>=0.15.2
+    - einops>=0.7.0
+    - safetensors>=0.4.1
+    - Pillow>=9.4.0
+    - huggingface_hub>=0.23.5
+    - accelerate
+    - transformers>=4.43.3
+    - sentencepiece
+    - bitsandbytes>=0.43.3
+    - pygtrans
+    - fake_useragent
+    - lxml
+    - openai
+
   run:
     - curl -o /usr/local/bin/pget -L "https://github.com/replicate/pget/releases/latest/download/pget_$(uname -s)_$(uname -m)" && chmod +x /usr/local/bin/pget
     - pip install onnxruntime-gpu --extra-index-url https://aiinfra.pkgs.visualstudio.com/PublicPackages/_packaging/onnxruntime-cuda-12/pypi/simple/
 predict: "predict.py:Predictor"
-train: "train.py:train"

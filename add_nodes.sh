@@ -1,0 +1,13 @@
+python3 scripts/add_custom_node.py https://github.com/cubiq/ComfyUI_IPAdapter_plus
+python3 scripts/add_custom_node.py https://github.com/spinagon/ComfyUI-seamless-tiling
+python3 scripts/add_custom_node.py https://github.com/rgthree/rgthree-comfy
+python3 scripts/add_custom_node.py https://github.com/WASasquatch/was-node-suite-comfyui
+python3 scripts/add_custom_node.py https://github.com/yolain/ComfyUI-Easy-Use
+python3 scripts/add_custom_node.py https://github.com/kijai/ComfyUI-KJNodes
+python3 scripts/add_custom_node.py https://github.com/Amorano/Jovimetrix
+python3 scripts/add_custom_node.py https://github.com/jags111/ComfyUI_Jags_VectorMagic
+python3 scripts/add_custom_node.py https://github.com/jags111/ComfyUI_Jags_VectorMagic
+python3 scripts/add_custom_node.py https://github.com/BadCafeCode/masquerade-nodes-comfyui
+python3 scripts/add_custom_node.py https://github.com/Amorano/Jovimetrix
+python3 scripts/add_custom_node.py https://github.com/aidenli/ComfyUI_NYJY
+python3 scripts/add_custom_node.py https://github.com/ssitu/ComfyUI_UltimateSDUpscale
